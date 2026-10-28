@@ -2,6 +2,14 @@
 const gameForm = document.querySelector("#gameForm");
 const userChoice = document.querySelector("#userChoice");
 
+// get HTML elements to display game results and scores
+const playerResult = document.querySelector("#playerResult");
+const computerResult = document.querySelector("#computerResult");
+const winnerResult = document.querySelector("#winnerResult");
+const winsDisplay = document.querySelector("#wins");
+const lossesDisplay = document.querySelector("#losses");
+const tiesDisplay = document.querySelector("#ties");
+
 // declared variables to track wins, losses, and ties
 let wins = 0;
 let losses = 0;
@@ -86,6 +94,18 @@ const handleSubmit = (event) => {
 
   // pass result as argument to update score after each round
   updateScore(result);
+
+  // display player's choice and computer's choice on webpage
+  playerResult.textContent = `You chose: ${playerChoice}`;
+  computerResult.textContent = `Computer chose: ${computerChoice}`;
+
+  // display win, lose, or tie result on webpage
+  winnerResult.textContent = `Result: ${result}`;
+
+  // display updated wins, losses, and ties on webpage
+  winsDisplay.textContent = wins;
+  lossesDisplay.textContent = losses;
+  tiesDisplay.textContent = ties;
 
   // check if score is updating
   console.log("wins:", wins);

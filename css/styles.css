@@ -1,0 +1,122 @@
+body {
+  background-color: #f7f5f0;
+  font-family: Arial, sans-serif;
+  color: #343a36;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+header {
+  text-align: center;
+  margin-top: 0;
+}
+
+header img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+}
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #343a36;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 14px;
+  color: #777d78;
+  letter-spacing: 1px;
+}
+
+#gameForm {
+  background-color: #ffffff;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e2dc;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  background-color: #f7f5f0;
+  color: #343a36;
+  border: 1px solid #d5d2ca;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #777d78;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #565d58;
+}
+
+#gameResults {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5e2dc;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#gameResults p {
+  color: #343a36;
+  margin: 10px 0;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #e7dcc7;
+  border-radius: 12px;
+}
+
+#scoreboard p {
+  margin: 0;
+  color: #343a36;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #gameForm {
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #scoreboard {
+    gap: 15px;
+    padding: 12px;
+  }
+}
